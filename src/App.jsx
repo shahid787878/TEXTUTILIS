@@ -21,7 +21,7 @@ function App() {
   {/* <Incdec/> */}
      <header style={{height:'100px'}}> <Navbar /></header>
       <Shop/>
-      <div className="container"></div>
+     
       {/* <Link to='/home'>Home</Link> is type ke off hone chahiye element ke liye
       <Link to='/about'>About</Link> */}
       <Routes>
@@ -32,7 +32,9 @@ function App() {
       <Route path='/gallary' element={<Gallary/>} />
     
       </Routes>
-      
+        <About/>
+        
+    
     </Router>
 
     </NoteState>

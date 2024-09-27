@@ -336,9 +336,24 @@ background-repeat: no-repeat;
 .container-fluid .box .body .content div h3{
   letter-spacing: 1px;
 }
+@media screen and (max-width: 480px) {
+  .hm {font-size: 10px;margin-left: -150px; }
+}
+.hm{
+            background-image: url(https://images.pexels.com/photos/16085175/pexels-photo-16085175/free-photo-of-queen-sofia-palace-of-arts-in-valencia.jpeg?auto=compress&cs=tinysrgb&w=600);  
+                background-clip: text;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+/*color: transparent;*/
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+            }
     </style>
       </style>
-    <title>React App</title>
+    <title>SHAHID PATEL</title>
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
@@ -379,7 +394,7 @@ background-repeat: no-repeat;
 </script>
 </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript> Shahid</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -482,35 +497,35 @@ document.getElementById("vb").style.Color ="white";
                 }
             }
         })
-  //       $('#center').slick({
-  //   centerMode: true,
-  //   centerPadding: '500px',
-  //   slidesToShow: 3, 
+        $('#center').slick({
+    centerMode: true,
+    centerPadding: '500px',
+    slidesToShow: 3, 
     
-  //   autoplay:true,
-  //           rtlf:false,
-  //           autoplayTimeout:3000,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         arrows: false,
-  //         centerMode: true,
-  //         centerPadding: '150px',
-  //         slidesToShow: 3
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         arrows: false,
-  //         centerMode: true,
-  //         centerPadding: '10px',
-  //         slidesToShow: 1
-  //       }
-  //     }
-  //   ]
-  // });      
+    autoplay:true,
+            rtlf:false,
+            autoplayTimeout:3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '150px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '10px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });      
            }
   )
       
@@ -556,6 +571,74 @@ document.getElementById("vb").style.Color ="white";
           });
         });
       });
-    </script>
-  </body>
+
+</script>
+<script>
+  //made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 1000) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+      }
+
+      setTimeout(function() {
+      that.tick();
+      }, delta);
+  };
+
+  window.onload = function() {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 8em solid #red}";
+      document.body.appendChild(css);
+  };
+</script>
+<script>
+  function openLoginModal() {
+    var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+    loginModal.show();
+    var navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
+    navbarTogglerIcon.classList.toggle('open');
+  }
+</script>
+</body>
 </html>

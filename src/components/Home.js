@@ -30,7 +30,8 @@ setBtnText1(" $ ok please wait")
 }
 
   return (
-  <section>  
+<>
+<section>  
       <div className="container   mx-auto">
       <div className="row  text-center  " >
         <h1 className="display-5 text-light animate__animated animate__fadeInDown hm">shahid patel</h1>
@@ -421,9 +422,10 @@ setBtnText1(" $ ok please wait")
           </button></div></div></div>
           
     </div></div></div>
-    </div>
-    <footer className=" float-start footer_dark  bg-dark w-100"  style={{zindex:'-1'}}>
+    </div></section>
   {/* <!-- <div className="container"> --> */}
+    
+    <footer className=" float-start footer_dark  bg-dark w-100"  style={{zindex:'-1'}}>
    <div className="footer-top pt-5">
       <div className="container pt-5">
          <div className="row">
@@ -581,8 +583,8 @@ setBtnText1(" $ ok please wait")
         </div>
     </div>      
 </footer>
-    </section>
-    
+
+</>  
   )
 }
 

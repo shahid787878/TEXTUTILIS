@@ -47,13 +47,15 @@ const amount= useSelector(state=>state.amount)
 
  <nav className="navbar navbar-expand-lg bg-light  position-fixed float-start w-100"  id="vb" >
  <div className="container-fluid " >
-        <Link className="navbar-brand animate__animated animate__bounce" to="/" >
-      Dashboard
+        <Link className="navbar-brand animate__animated animate__bounce  " to="/" >
+    
+      <h2 className="wrap typewrite text-dark text-decoration-none hm d-sm-display-6 d-md-display-5 d-lg-display-5 d-xl-display-5" data-period="2" data-type='[ "Kshipra River Ujjain" ]' >SHAHID </h2>
         </Link>
+        
         <div className="collapse navbar-collapse animate__animated animate__bounce" id="shahid">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item  ">
-          <Link className={`nav-link active ${location.pathname==="/home"?"active":""}`} aria-current="page" to="/home">Home</Link>
+          <Link className={`nav-link active ${location.pathname==="/home"?"active":""}`} aria-current="page" to="/home" >Home</Link>
         </li>            
             <li className="nav-item ">
             <Link className={`nav-link  ${location.pathname==="/"?"active":""}`} to="/about" >About</Link>
@@ -68,19 +70,22 @@ const amount= useSelector(state=>state.amount)
             <li className="nav-item ">
             <Link className={`nav-link  ${location.pathname==="/"?"active":""}`} to="/converter" >Converter</Link>
             </li>    
-          
+            <li className="nav-item mt-2 ms-5 bg-dark text-white">
+        Your Balance is: {amount}
+           
+            </li> 
         
                  </ul>
+
         </div>
-        <div className="  right-top bg-light d-flex animate__animated animate__bounce">
+        <div className="me-5  right-top bg-light d-flex animate__animated animate__bounce">
           
         {/* <h6 className="btn  btn-primary"onClick={increment}>+</h6>
           <h6 className="btn btn-primary">{num}</h6>
           <h6 className="btn btn-primary" onClick={decrement}>-</h6> */}
-          <button className="btn btn-primary">Your Updated Wallet Balance: <span className="bg-dark "> {amount} </span></button>
         
         <button data-bs-toggle="modal" data-bs-target="#loginModal"
-                className="rainbow rainbow-1 btn login-btn-links d-none d-md-block">
+                className="rainbow rainbow-1 me-5 btn login-btn-links d-none d-md-block">
                 
                   <svg width="25" height="25" viewBox="0 0 36 22" xmlns="http://www.w3.org/2000/svg"
                     onclick="this.classList.toggle('active')">
@@ -99,7 +104,7 @@ const amount= useSelector(state=>state.amount)
                     </g>
                   </svg>
               </button>
-              <button type="button" className="btn bar-btn-links" data-bs-toggle="offcanvas"
+              <button type="button" className="btn bar-btn-links me-5" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRightmobile">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -124,7 +129,30 @@ d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.
 
 </div>
 <div className="offcanvas-body">
+<ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li className="nav-item  ">
+          <Link className={`nav-link active ${location.pathname==="/home"?"active":""}`} aria-current="page" to="/home">Home</Link>
+        </li>            
+            <li className="nav-item ">
+            <Link className={`nav-link  ${location.pathname==="/"?"active":""}`} to="/about" >About</Link>
+            </li>
+        
+        <li className="nav-item ">
+            <Link className={`nav-link  ${location.pathname==="/"?"active":""}`} to="/contact" >Contact</Link>
+            </li>   
+            <li className="nav-item ">
+            <Link className={`nav-link  ${location.pathname==="/"?"active":""}`} to="/gallary" >Gallary</Link>
+            </li>       
+            <li className="nav-item ">
+            <Link className={`nav-link  ${location.pathname==="/"?"active":""}`} to="/converter" >Converter</Link>
+            </li>    
+            <li className="nav-item ">
+            <Link  onclick="openLoginModal()" data-bs-toggle="modal" data-bs-target="#loginModal" >Login</Link>
+            </li> 
+        
+                 </ul>
 <div className="head-contact d-none d-lg-block"> 
+  
 <div id="relatedStories_news" className="commonNews_Widget">
 <span className="h2">Related</span>
 <div className="news-cards">  
