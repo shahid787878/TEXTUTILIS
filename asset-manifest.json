@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TEXTUTILIS/static/css/main.e6c13ad2.css",
-    "main.js": "/TEXTUTILIS/static/js/main.7f8a9835.js",
+    "main.js": "/TEXTUTILIS/static/js/main.e1209f54.js",
     "static/js/453.ed3810f9.chunk.js": "/TEXTUTILIS/static/js/453.ed3810f9.chunk.js",
     "index.html": "/TEXTUTILIS/index.html",
     "main.e6c13ad2.css.map": "/TEXTUTILIS/static/css/main.e6c13ad2.css.map",
-    "main.7f8a9835.js.map": "/TEXTUTILIS/static/js/main.7f8a9835.js.map",
+    "main.e1209f54.js.map": "/TEXTUTILIS/static/js/main.e1209f54.js.map",
     "453.ed3810f9.chunk.js.map": "/TEXTUTILIS/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.7f8a9835.js"
+    "static/js/main.e1209f54.js"
   ]
 }
