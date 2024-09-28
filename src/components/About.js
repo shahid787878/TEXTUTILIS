@@ -1,14 +1,14 @@
 
-import React, { useContext } from 'react';
-import noteContext from '../context/notes/noteContext'
+import React from 'react';
+// import noteContext from '../context/notes/noteContext'
 const About = () => {
-const a = useContext(noteContext)
+// const a = useContext(noteContext)
 
   return (
     <div  >
-<div className="container-expand mx-auto bg-primary me-1 ms-1">
+<div className="container-expand mx-auto  me-1 ms-1">
 
-<div className="owl-carousel owl-theme w-100 row bg-dark mx-auto  " id="owl-one">
+<div className="owl-carousel owl-theme w-100 row  mx-auto  " id="owl-one">
 <div className="row">
 <div className="item">
     <h4><img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height="330"  srcset=""/></h4>
@@ -42,8 +42,8 @@ const a = useContext(noteContext)
 <div className="owl-carousel owl-theme mt-5 mb-5 " id="owl-two">
 
         
-<div className="row bg-warning h-100">
-<div className="item bg-success">
+<div className="row h-100">
+<div className="item ">
     <img src="https://images.pexels.com/photos/53114/horse-arabs-stallion-ride-53114.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""  className="img-fluid h-100 " height="330" srcset=""/>
 </div>
 </div>

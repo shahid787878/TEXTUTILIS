@@ -6,9 +6,9 @@ const Gallary = () => {
 
 <section className=" mt-5 pt-5 float-start  text-dark   float-start position-relative" style={{zindex:' -1'}}>
 
-  <div className="container-expand align-items-center  justify-content-center mx-auto bg-primary me-1 ms-1" >
+  <div className="container-expand align-items-center  justify-content-center mx-auto  me-1 ms-1" >
 
-    <div className="owl-carousel owl-theme w-100 row bg-dark mx-auto  justify-content-center align-items-center d-flex " id="owl-one">
+    <div className="owl-carousel owl-theme w-100 row mx-auto  justify-content-center align-items-center d-flex " id="owl-one">
 <div className="row">
     <div className="item">
         <h4><img height="330" src="https://images.pexels.com/photos/28171293/pexels-photo-28171293/free-photo-of-a-lake-with-trees-and-mountains-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""   srcset=""/></h4>

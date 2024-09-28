@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
-      <footer className=" float-start footer_dark  bg-dark w-100 " >
+      <footer className=" footer_dark  bg-dark w-100 " >
   {/* <!-- <div className="container"> --> */}
    <div className="footer-top pt-5">
       <div className="container pt-5">
